@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+/*1. Задать температуру в градусах по Цельсию. Вывести в alert соответствующую температуру в градусах по Фаренгейту.*/
+
+
+var Tc = prompt("Ведите количество градусов по Цельсию");
+Tf = (9 / 5) * Tc + 32;
+alert(`${Tc} градуса по Цельсию = ${Tf} градусам по Фаренгейту`);
+
+
+/*2. Сделать обмен значений двух числовых переменных без использования третьей переменной
+  a) Объявить две переменные: admin и name. Записать в name строку «Василий»;
+  b) Скопировать значение из name в admin. Вывести admin (должно вывести «Василий»)*/
+
+var a = 5;
+var b = 8;
+
+a = a + b;
+b = a - b;
+a = a - b;
+alert(a,b);
+
+
+
+
+var admin;
+var name = "Василий";
+
+admin = name;
+alert(admin);
+
+
+
+/*. *Чему будет равно JS-выражение 1000 + "108"?*/
+
+var a = 1000 + "108";
+// получится число 1000108 , так как в данном случае при сложении строки и числа получится конатенация 
+
+
+
+
+  </script>
+</body>
+</html>
