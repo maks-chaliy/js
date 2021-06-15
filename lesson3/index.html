@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+
+
+//1. С помощью цикла while вывести все простые числа в промежутке от 0 до 100
+
+var i = 2;
+
+      while (i<=100){
+          var j=2;
+          while(j<=i){
+              if (i%j == 0) {
+                  break;
+              }
+              j++;
+          }
+          if(j==i) {
+              console.log(i);
+          }
+          i++;
+      }
+
+
+
+//2-3 задание
+var basket = [
+  {
+    model: "Rio",
+    stamp: "kia",
+    price: 10000,
+    count: 3,
+  },
+  {
+    model: "Ceed",
+    stamp: "kia",
+    price: 15000,
+    count: 3,
+  },
+  {
+    model: "optima",
+    stamp: "kia",
+    price: 25000,
+    count: 1,
+  },
+];
+
+function countBasketPrice(sumBasket){
+  var sum = 0;
+for (var item of sumBasket) {
+  sum = sum + (item.price * item.count);//умножает стоимость товара на количество
+}
+return sum;
+}
+
+console.log(countBasketPrice(basket));
+
+
+// с помощью метода reduce
+// var sumBasket = basket.reduce((acc, basket, i, arr) =>{
+//   return acc + (basket.price * basket.count);
+// }, 0);
+// console.log(sumBasket);
+
+
+
+
+
+//4) *Нарисовать пирамиду с помощью console.log/
+var a = " ";
+for (var i = 1; i <= 20; i++){
+  a = a + "x";
+  console.log(a);
+}
+
+
+
+//5.*Вывести с помощью цикла for числа от 0 до 9, не используя тело цикла. 
+for (var i = 1; i <= 9; console.log(i++));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+  
+</body>
+</html>
